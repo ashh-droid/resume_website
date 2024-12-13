@@ -15,6 +15,7 @@ header {
     text-align: center;
     font-family: Helvetica, sans-serif;
     font-size: 30px;
+    background-image: "images/background-image"
 }
 
 header nav a {
