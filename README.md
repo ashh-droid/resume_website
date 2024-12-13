@@ -1,2 +1,2 @@
 # resume_website
-Multipage webpage containing resume and bio-data
+Multipage website containing resume and bio-data
