@@ -1,25 +1,25 @@
 document.querySelectorAll("[data-current-year]").forEach((element) => {
-    element.textContent = String(new Date().getFullYear());
+  element.textContent = String(new Date().getFullYear());
 });
 
 const menuButton = document.querySelector(".menu-button");
-const navigation = document.querySelector("#primary-nav");
+const navigation = document.querySelector("#site-nav");
 
 if (menuButton && navigation) {
-    menuButton.addEventListener("click", () => {
-        const isOpen = menuButton.getAttribute("aria-expanded") === "true";
-        menuButton.setAttribute("aria-expanded", String(!isOpen));
-        navigation.classList.toggle("is-open", !isOpen);
-    });
+  menuButton.addEventListener("click", () => {
+    const open = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", String(!open));
+    navigation.classList.toggle("is-open", !open);
+  });
 
-    navigation.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-            menuButton.setAttribute("aria-expanded", "false");
-            navigation.classList.remove("is-open");
-        });
+  navigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menuButton.setAttribute("aria-expanded", "false");
+      navigation.classList.remove("is-open");
     });
+  });
 }
 
 document.querySelectorAll("[data-print]").forEach((button) => {
-    button.addEventListener("click", () => window.print());
+  button.addEventListener("click", () => window.print());
 });
