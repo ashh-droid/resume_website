@@ -6,39 +6,42 @@
     <meta name="description" content="Resume of Asmita G V, Computer Science graduate and full-stack developer.">
     <meta name="theme-color" content="#25324d">
     <title>Resume | Asmita G V</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <header class="site-header">
         <div class="container header-inner">
             <a class="brand" href="index.html">
                 Asmita G V
-                <span>Student Portfolio</span>
+                <span>Full-Stack Developer</span>
             </a>
-            <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">
-                Menu
-            </button>
+            <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
             <nav id="primary-nav" aria-label="Primary navigation">
                 <a href="index.html">Home</a>
+                <a href="index.html#projects">Projects</a>
                 <a href="resume.html" aria-current="page">Resume</a>
-                <a href="bio.html">Bio-data</a>
+                <a href="about.html">About</a>
+                <a href="index.html#contact">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main class="container page-main">
+    <main id="main-content" class="container page-main">
         <section class="resume-intro">
             <div>
                 <p class="eyebrow">Resume</p>
                 <h1>Asmita G V</h1>
                 <p class="lead compact">
-                    Computer Science graduate interested in software engineering,
-                    full-stack development, DevOps, and cybersecurity.
+                    Computer Science graduate with hands-on experience in full-stack development,
+                    responsive web applications, DevOps, and cybersecurity.
                 </p>
             </div>
             <div class="resume-actions">
-                <a class="btn" href="Asmita_GV_Resume.pdf" download>Download Resume</a>
+                <a class="btn" href="Asmita_GV_Resume.pdf" download>Download PDF</a>
                 <button class="btn btn-secondary" type="button" data-print>Print Page</button>
             </div>
         </section>
@@ -95,47 +98,17 @@
         <section class="resume-section">
             <h2>Technical Skills</h2>
             <div class="skill-groups">
-                <div>
-                    <h3>Languages</h3>
-                    <p>Python, Java, C, TypeScript, JavaScript</p>
-                </div>
-                <div>
-                    <h3>Frontend</h3>
-                    <p>Next.js, React, HTML, CSS</p>
-                </div>
-                <div>
-                    <h3>Backend & Databases</h3>
-                    <p>Django, REST APIs, MySQL, SQLite</p>
-                </div>
-                <div>
-                    <h3>DevOps & Tools</h3>
-                    <p>Git, GitHub, GitHub Actions, Docker, Kubernetes, Cloudflare, VS Code, Ubuntu</p>
-                </div>
-                <div>
-                    <h3>AI & Data</h3>
-                    <p>Generative AI, LLMs, Prompt Engineering, NumPy, Pandas</p>
-                </div>
+                <div><h3>Languages</h3><p>Python, Java, C, TypeScript, JavaScript</p></div>
+                <div><h3>Frontend</h3><p>Next.js, React, HTML, CSS</p></div>
+                <div><h3>Backend & Databases</h3><p>Django, REST APIs, MySQL, SQLite</p></div>
+                <div><h3>DevOps & Tools</h3><p>Git, GitHub, GitHub Actions, Docker, Kubernetes, Cloudflare, VS Code, Ubuntu</p></div>
+                <div><h3>AI & Data</h3><p>Generative AI, LLMs, Prompt Engineering, NumPy, Pandas</p></div>
             </div>
         </section>
 
         <section class="resume-section">
             <h2>Projects</h2>
             <div class="project-list">
-                <article class="project-card">
-                    <div class="project-top">
-                        <h3>Wobb Creator Scout</h3>
-                        <span>React · TypeScript · Tailwind CSS · Zustand</span>
-                    </div>
-                    <ul>
-                        <li>Improved an influencer discovery assignment with responsive search, platform filters, detailed creator pages, and a persistent shortlist.</li>
-                        <li>Refined accessibility, mobile layouts, feedback states, and Vercel direct-route support.</li>
-                    </ul>
-                    <div class="project-links">
-                        <a href="https://vibe-coder-assignment-v1-ashhdroid.vercel.app/" target="_blank" rel="noreferrer">Live demo</a>
-                        <a href="https://github.com/ashh-droid/wobb-vibe-coder-assignment" target="_blank" rel="noreferrer">GitHub</a>
-                    </div>
-                </article>
-
                 <article class="project-card">
                     <div class="project-top">
                         <h3>Arcanelinx Corporate Website</h3>
@@ -146,6 +119,9 @@
                         <li>Built a quotation workflow, contact validation, downloadable company profiles, and SEO metadata.</li>
                         <li>Used GitHub version control, Cloudflare deployment, and production build validation.</li>
                     </ul>
+                    <div class="project-links">
+                        <a href="https://arcanelinx.com/" target="_blank" rel="noreferrer">Live website</a>
+                    </div>
                 </article>
 
                 <article class="project-card">
@@ -158,11 +134,14 @@
                         <li>Containerised the application and deployed it using Kubernetes Deployments and Services.</li>
                         <li>Added configuration management, health checks, and horizontal scaling.</li>
                     </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/ashh-droid/Hostel-Allocation-System" target="_blank" rel="noreferrer">GitHub repository</a>
+                    </div>
                 </article>
 
                 <article class="project-card">
                     <div class="project-top">
-                        <h3>Ethical Phishing & Cyber Defense Evaluation System</h3>
+                        <h3>Integrated Ethical Phishing Attack and Cyber Defense Evaluation System</h3>
                         <span>Splunk SIEM · SET · Apache</span>
                     </div>
                     <ul>
@@ -207,8 +186,8 @@
 
     <footer>
         <div class="container footer-inner">
-            <p>Resume website created as a college project and updated with current work.</p>
-            <p>&copy; 2024–<span data-current-year>2026</span> Asmita G V</p>
+            <p>Professional resume and project overview.</p>
+            <p>&copy; <span data-current-year>2026</span> Asmita G V</p>
         </div>
     </footer>
 </body>

@@ -1,0 +1,198 @@
+{
+  "html": {
+    "index.html": {
+      "title": true,
+      "lang": "en",
+      "main_count": 1
+    },
+    "resume.html": {
+      "title": true,
+      "lang": "en",
+      "main_count": 1
+    },
+    "about.html": {
+      "title": true,
+      "lang": "en",
+      "main_count": 1
+    },
+    "bio.html": {
+      "title": true,
+      "lang": "en",
+      "main_count": 0
+    },
+    "404.html": {
+      "title": true,
+      "lang": "en",
+      "main_count": 1
+    }
+  },
+  "local_links": [
+    {
+      "from": "index.html",
+      "target": "favicon.svg",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "target": "styles.css",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "target": "script.js",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "target": "resume.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "target": "about.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "target": "Asmita_GV_Resume.pdf",
+      "exists": true
+    },
+    {
+      "from": "resume.html",
+      "target": "favicon.svg",
+      "exists": true
+    },
+    {
+      "from": "resume.html",
+      "target": "styles.css",
+      "exists": true
+    },
+    {
+      "from": "resume.html",
+      "target": "script.js",
+      "exists": true
+    },
+    {
+      "from": "resume.html",
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "from": "resume.html",
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "from": "resume.html",
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "from": "resume.html",
+      "target": "resume.html",
+      "exists": true
+    },
+    {
+      "from": "resume.html",
+      "target": "about.html",
+      "exists": true
+    },
+    {
+      "from": "resume.html",
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "from": "resume.html",
+      "target": "Asmita_GV_Resume.pdf",
+      "exists": true
+    },
+    {
+      "from": "about.html",
+      "target": "favicon.svg",
+      "exists": true
+    },
+    {
+      "from": "about.html",
+      "target": "styles.css",
+      "exists": true
+    },
+    {
+      "from": "about.html",
+      "target": "script.js",
+      "exists": true
+    },
+    {
+      "from": "about.html",
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "from": "about.html",
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "from": "about.html",
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "from": "about.html",
+      "target": "resume.html",
+      "exists": true
+    },
+    {
+      "from": "about.html",
+      "target": "about.html",
+      "exists": true
+    },
+    {
+      "from": "about.html",
+      "target": "index.html",
+      "exists": true
+    },
+    {
+      "from": "about.html",
+      "target": "resume.html",
+      "exists": true
+    },
+    {
+      "from": "bio.html",
+      "target": "about.html",
+      "exists": true
+    },
+    {
+      "from": "bio.html",
+      "target": "about.html",
+      "exists": true
+    },
+    {
+      "from": "404.html",
+      "target": "favicon.svg",
+      "exists": true
+    },
+    {
+      "from": "404.html",
+      "target": "styles.css",
+      "exists": true
+    },
+    {
+      "from": "404.html",
+      "target": "index.html",
+      "exists": true
+    }
+  ],
+  "css_braces": true,
+  "zip_integrity": null
+}
