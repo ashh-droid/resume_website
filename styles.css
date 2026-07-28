@@ -1,18 +1,18 @@
 /* Asmita G V - student portfolio
-   The original green and beige colour palette is intentionally retained. */
+   A friendly slate, lavender and peach palette keeps the site personal and readable. */
 
 :root {
-    --green: #00473e;
-    --green-light: #256b5f;
-    --lime: #a2c523;
-    --cream: #fdfdf6;
-    --sand: #d2b48c;
-    --soft: #f4f0e6;
+    --primary: #25324d;
+    --primary-hover: #3e5079;
+    --accent: #7c6ee6;
+    --page: #fffaf5;
+    --warm-accent: #f2b8a2;
+    --soft: #f3f1fb;
     --white: #ffffff;
-    --ink: #173c36;
-    --muted: #5e6f6b;
-    --line: #d8e1de;
-    --shadow: 0 10px 25px rgba(0, 71, 62, 0.10);
+    --ink: #20263a;
+    --muted: #667085;
+    --line: #ddddea;
+    --shadow: 0 10px 25px rgba(37, 50, 77, 0.12);
 }
 
 * {
@@ -28,18 +28,18 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: var(--cream);
+    background: var(--page);
     color: var(--ink);
     font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
     line-height: 1.65;
 }
 
 a {
-    color: var(--green);
+    color: var(--primary);
 }
 
 a:hover {
-    color: var(--green-light);
+    color: var(--primary-hover);
 }
 
 img {
@@ -53,7 +53,7 @@ a {
 
 button:focus-visible,
 a:focus-visible {
-    outline: 3px solid var(--lime);
+    outline: 3px solid var(--accent);
     outline-offset: 3px;
 }
 
@@ -66,9 +66,9 @@ a:focus-visible {
     position: sticky;
     top: 0;
     z-index: 20;
-    background: var(--green);
+    background: var(--primary);
     color: var(--white);
-    border-bottom: 4px solid var(--sand);
+    border-bottom: 4px solid var(--warm-accent);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
@@ -94,7 +94,7 @@ a:focus-visible {
 
 .brand span {
     display: block;
-    color: #d9e7a6;
+    color: #d9d4ff;
     font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 0.15em;
@@ -117,7 +117,7 @@ a:focus-visible {
 
 .site-header nav a:hover,
 .site-header nav a[aria-current="page"] {
-    background: var(--green-light);
+    background: var(--primary-hover);
 }
 
 .menu-button {
@@ -133,14 +133,14 @@ a:focus-visible {
 
 .hero {
     background:
-        linear-gradient(135deg, rgba(245, 245, 220, 0.97), rgba(210, 180, 140, 0.74)),
+        linear-gradient(135deg, rgba(255, 250, 245, 0.98), rgba(242, 184, 162, 0.58)),
         repeating-linear-gradient(
             0deg,
             transparent 0,
             transparent 31px,
-            rgba(0, 71, 62, 0.05) 32px
+            rgba(37, 50, 77, 0.05) 32px
         );
-    border-bottom: 1px solid var(--sand);
+    border-bottom: 1px solid var(--warm-accent);
 }
 
 .hero-grid {
@@ -154,7 +154,7 @@ a:focus-visible {
 
 .eyebrow {
     margin: 0 0 10px;
-    color: var(--green-light);
+    color: var(--primary-hover);
     font-size: 0.8rem;
     font-weight: 800;
     letter-spacing: 0.14em;
@@ -170,14 +170,14 @@ p {
 
 h1 {
     margin: 0;
-    color: var(--green);
+    color: var(--primary);
     font-size: clamp(2.7rem, 7vw, 5.2rem);
     line-height: 1.03;
     letter-spacing: -0.045em;
 }
 
 h2 {
-    color: var(--green);
+    color: var(--primary);
     line-height: 1.2;
 }
 
@@ -189,7 +189,7 @@ h3 {
 .lead {
     max-width: 690px;
     margin: 24px 0 0;
-    color: #31534d;
+    color: #4b566f;
     font-size: clamp(1.05rem, 2vw, 1.3rem);
 }
 
@@ -212,10 +212,10 @@ h3 {
     min-height: 45px;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--green);
+    border: 2px solid var(--primary);
     border-radius: 999px;
-    background: var(--green);
-    color: #d9ed8e;
+    background: var(--primary);
+    color: var(--white);
     padding: 10px 22px;
     font: inherit;
     font-weight: 800;
@@ -226,18 +226,18 @@ h3 {
 
 .btn:hover {
     transform: translateY(-2px);
-    background: var(--green-light);
+    background: var(--primary-hover);
     color: var(--white);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--green);
+    color: var(--primary);
 }
 
 .btn-secondary:hover {
     background: var(--white);
-    color: var(--green);
+    color: var(--primary);
 }
 
 .social-links {
@@ -256,10 +256,10 @@ h3 {
 
 .notebook-card {
     background: rgba(255, 255, 255, 0.92);
-    border: 2px solid var(--green);
+    border: 2px solid var(--primary);
     border-radius: 10px;
     padding: 30px;
-    box-shadow: 9px 9px 0 var(--sand);
+    box-shadow: 9px 9px 0 var(--warm-accent);
 }
 
 .notebook-card h2 {
@@ -271,8 +271,8 @@ h3 {
     display: inline-block;
     margin: 0;
     border-radius: 4px;
-    background: #e9f1c7;
-    color: var(--green);
+    background: #ece9ff;
+    color: var(--primary);
     padding: 3px 8px;
     font-size: 0.72rem;
     font-weight: 900;
@@ -288,7 +288,7 @@ h3 {
 
 .mini-note {
     margin-top: 22px;
-    border-left: 4px solid var(--lime);
+    border-left: 4px solid var(--accent);
     background: var(--soft);
     padding: 12px 14px;
 }
@@ -299,7 +299,7 @@ h3 {
 
 .soft-section {
     background: var(--soft);
-    border-block: 1px solid #e5ddcc;
+    border-block: 1px solid #e5e2ef;
 }
 
 .section-heading {
@@ -352,7 +352,7 @@ h3 {
     position: absolute;
     top: 20px;
     right: 22px;
-    color: var(--sand);
+    color: var(--warm-accent);
     font-size: 1.55rem;
     font-weight: 900;
 }
@@ -368,8 +368,8 @@ h3 {
 }
 
 .project-card.featured-project {
-    border: 2px solid var(--green);
-    box-shadow: 7px 7px 0 var(--sand);
+    border: 2px solid var(--primary);
+    box-shadow: 7px 7px 0 var(--warm-accent);
 }
 
 .project-card h3 {
@@ -404,7 +404,7 @@ h3 {
 }
 
 .project-type {
-    color: var(--green);
+    color: var(--primary);
     font-weight: 900;
 }
 
@@ -421,10 +421,10 @@ h3 {
 
 .tag-row span,
 .tag-list span {
-    border: 1px solid #d3ddbd;
+    border: 1px solid #d8d3fa;
     border-radius: 999px;
-    background: #f5f8e9;
-    color: var(--green);
+    background: #f4f2ff;
+    color: var(--primary);
     padding: 5px 10px;
     font-size: 0.78rem;
     font-weight: 800;
@@ -446,15 +446,15 @@ h3 {
     grid-template-columns: 90px 1fr;
     gap: 22px;
     padding: 24px 0;
-    border-bottom: 1px solid #d9cfbb;
+    border-bottom: 1px solid #ddd8e8;
 }
 
 .timeline-item:first-child {
-    border-top: 1px solid #d9cfbb;
+    border-top: 1px solid #ddd8e8;
 }
 
 .timeline-item time {
-    color: var(--green);
+    color: var(--primary);
     font-size: 1.2rem;
     font-weight: 900;
 }
@@ -526,7 +526,7 @@ h3 {
 
 .resume-entry {
     padding-left: 18px;
-    border-left: 4px solid var(--sand);
+    border-left: 4px solid var(--warm-accent);
 }
 
 .entry-heading {
@@ -579,8 +579,8 @@ h3 {
 }
 
 .highlight-box {
-    border-left: 5px solid var(--lime);
-    background: #f5f8e9;
+    border-left: 5px solid var(--accent);
+    background: #f4f2ff;
     padding: 18px;
 }
 
@@ -629,7 +629,7 @@ td {
 
 th {
     width: 34%;
-    color: var(--green);
+    color: var(--primary);
 }
 
 .plain-list {
@@ -639,8 +639,8 @@ th {
 
 footer {
     margin-top: auto;
-    border-top: 5px solid var(--sand);
-    background: var(--green);
+    border-top: 5px solid var(--warm-accent);
+    background: var(--primary);
     color: var(--white);
 }
 
@@ -712,7 +712,7 @@ footer {
     }
 
     .notebook-card {
-        box-shadow: 6px 6px 0 var(--sand);
+        box-shadow: 6px 6px 0 var(--warm-accent);
     }
 
     .section {
