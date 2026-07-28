@@ -1,21 +1,10 @@
 # Asmita G V — Portfolio
 
-A responsive software-engineering portfolio with selected case studies, internship experience, technical capabilities, education, certifications, and contact details.
+A responsive portfolio featuring my projects, software engineering experience, technical skills, education, certifications, and contact details.
 
 ## Live Website
 
 https://ashh-droid.github.io/Portfolio/
-
-## Featured Case Studies
-
-- Arcanelinx Corporate Website
-- Hostel Allocation System
-
-## Additional Projects
-
-- Integrated Ethical Phishing Attack and Cyber Defense Evaluation System
-- Real-Time Multi-Client Chat Application
-- WEE RIDE — Carpooling and Ride Sharing Platform
 
 ## Built With
 
@@ -23,14 +12,6 @@ https://ashh-droid.github.io/Portfolio/
 - CSS
 - JavaScript
 - GitHub Pages
-
-## Run Locally
-
-```bash
-python -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
 
 ## Contact
 

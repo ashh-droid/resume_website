@@ -45,7 +45,7 @@
 <a class="back-link" href="index.html#work">← Back to selected work</a>
 <p class="eyebrow">Case study · Full-stack application</p>
 <h1>Hostel Allocation System</h1>
-<p class="case-summary">A role-based Django application for managing hostel requests, student records, room allocation, and administrative workflows, with Docker and Kubernetes deployment resources.</p>
+<p class="case-summary">A web-based hostel management application that supports student applications, administrative review, room allocation, and deployment through Docker and Kubernetes.</p>
 <div class="case-actions">
 <a class="button button-primary" href="https://github.com/ashh-droid/Hostel-Allocation-System" rel="noreferrer" target="_blank">View GitHub repository ↗</a>
 </div>
@@ -88,75 +88,76 @@
 </aside>
 <div class="case-content">
 <section id="problem">
-<p class="eyebrow">Problem</p>
-<h2>Bring hostel applications, records, and room allocation into one system.</h2>
+<p class="eyebrow">The problem</p>
+<h2>Bringing hostel applications, records, and room allocation into one system.</h2>
 <p>
-  Manual and disconnected steps make it difficult to track requests, room
-  availability, and allocation status. The application centralises those workflows
-  for students, wardens, and administrators.
-</p>
+      The project replaces disconnected manual steps with a role-based
+      application where students can apply and track their status while wardens
+      and administrators review records and manage room allocation.
+    </p>
 </section>
 <section id="workflow">
-<p class="eyebrow">User workflows</p>
-<h2>Different experiences for each role.</h2>
+<p class="eyebrow">Application workflow</p>
+<h2>Separate experiences for students, wardens, and administrators.</h2>
 <div aria-label="Application workflow" class="workflow-line">
-<span>Sign in</span>
+<span>Register or sign in</span>
 <i>→</i>
-<span>Submit request</span>
+<span>Submit hostel request</span>
 <i>→</i>
 <span>Review records</span>
 <i>→</i>
 <span>Allocate room</span>
 <i>→</i>
-<span>View result</span>
+<span>View allocation details</span>
 </div>
 <div class="decision-grid">
-<article><h3>Students</h3><p>Apply for accommodation, track status, and view allocation details.</p></article>
-<article><h3>Wardens</h3><p>Review requests and oversee student and room information.</p></article>
-<article><h3>Administrators</h3><p>Manage users, records, allocation workflows, and system configuration.</p></article>
+<article><h3>Student workflow</h3><p>Registration, authentication, hostel applications, status tracking, and allocation details.</p></article>
+<article><h3>Warden workflow</h3><p>Request review, student and room oversight, and operational record management.</p></article>
+<article><h3>Administrator workflow</h3><p>User management, dashboards, allocation records, configuration, and system administration.</p></article>
 </div>
 </section>
 <section id="architecture">
-<p class="eyebrow">Architecture</p>
-<h2>Django application with role-based access and structured data models.</h2>
+<p class="eyebrow">Application structure</p>
+<h2>Django-based application with clear domain entities.</h2>
 <p>
-  The application uses Django authentication and ORM models for users, students,
-  rooms, applications, and allocations.
-</p>
+              The project uses Django ORM and separates core information into
+              users, student profiles, hostel rooms, applications, and final allocations.
+            </p>
 <div class="architecture-diagram">
-<div><strong>Interface</strong><span>Django templates</span></div>
+<div><strong>Browser</strong><span>Django templates</span></div>
 <b>→</b>
-<div><strong>Application</strong><span>Views · Forms · Authentication</span></div>
+<div><strong>Django application</strong><span>Views · Forms · Auth</span></div>
 <b>→</b>
-<div><strong>Data</strong><span>Django ORM · SQLite</span></div>
+<div><strong>Data layer</strong><span>Django ORM · SQLite</span></div>
 </div>
 <div class="case-points">
-<article><span>01</span><div><h3>Role-based access</h3><p>Separates student, warden, and administrator permissions and workflows.</p></div></article>
-<article><span>02</span><div><h3>Security foundations</h3><p>Uses password hashing, CSRF protection, form validation, and access controls.</p></div></article>
-<article><span>03</span><div><h3>Operational records</h3><p>Stores student details, room availability, applications, and final allocations.</p></div></article>
+<article><span>01</span><div><h3>Role-based access</h3><p>Student and administrator permissions are separated through Django authentication and application logic.</p></div></article>
+<article><span>02</span><div><h3>Security foundations</h3><p>The project uses password hashing, CSRF protection, role-based access control, and form validation.</p></div></article>
+<article><span>03</span><div><h3>Operational data</h3><p>Models cover student information, room availability, accommodation applications, and allocations.</p></div></article>
 </div>
 </section>
 <section id="deployment">
-<p class="eyebrow">Deployment</p>
-<h2>Package and run the application consistently.</h2>
+<p class="eyebrow">Deployment work</p>
+<h2>Moving the application beyond local development.</h2>
 <p>
-  Docker provides a repeatable application environment. Kubernetes resources
-  manage deployment, service access, configuration, secrets, replicas, and
-  application health checks.
-</p>
+      The application was containerised using Docker and prepared for Kubernetes
+      deployment with Deployments, Services, configuration management, secrets,
+      replicas, and application health monitoring.
+    </p>
 <div class="decision-grid">
-<article><h3>Docker</h3><p>Packages the Django application and dependencies in one consistent environment.</p></article>
-<article><h3>Kubernetes</h3><p>Uses Deployments and Services to run and expose the application.</p></article>
-<article><h3>Reliability</h3><p>Includes liveness checks, readiness checks, ConfigMaps, Secrets, and replica support.</p></article>
+<article><h3>Docker</h3><p>Provides a consistent runtime environment for the Django application and its dependencies.</p></article>
+<article><h3>Kubernetes</h3><p>Uses Deployments and Services for application orchestration and access.</p></article>
+<article><h3>Operational reliability</h3><p>Includes liveness checks, readiness checks, ConfigMaps, Secrets, and replica support.</p></article>
 </div>
 </section>
 <section id="future">
-<p class="eyebrow">Next steps</p>
-<h2>Improve production readiness.</h2>
+<p class="eyebrow">What I would improve next</p>
+<h2>Strengthening production readiness.</h2>
 <p>
-  The next improvements would include PostgreSQL, automated tests, CI/CD, cloud
-  deployment, centralised monitoring, and stronger transaction handling for room allocation.
-</p>
+      The next steps would include PostgreSQL, automated tests, CI/CD, cloud
+      deployment, centralised monitoring, and stronger transaction handling
+      for room allocation.
+    </p>
 </section>
 </div>
 </div>
