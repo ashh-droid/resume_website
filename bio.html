@@ -3,51 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio-data</title>
+    <meta name="description" content="Bio-data and professional profile of Asmita G V.">
+    <meta name="theme-color" content="#00473e">
+    <title>Bio-data | Asmita G V</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Bio-data</h1>
-            <nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                Asmita G V
+                <span>Student Portfolio</span>
+            </a>
+            <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">
+                Menu
+            </button>
+            <nav id="primary-nav" aria-label="Primary navigation">
                 <a href="index.html">Home</a>
                 <a href="resume.html">Resume</a>
-                <a href="bio.html">Bio-data</a>
+                <a href="bio.html" aria-current="page">Bio-data</a>
             </nav>
         </div>
     </header>
-    <main class="container">
-        <h2>Personal Information</h2>
-        <table>
-            <tr>
-                <th>Field</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>Name</td>
-                <td>Asmita</td>
-            </tr>
-            <tr>
-                <td>Date of Birth</td>
-                <td>25-11-2004</td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>abcd@gmail.com</td>
-            </tr>
-            <tr>
-                <td>Address</td>
-                <td>Tumkur, India</td>
-            </tr>
-            <tr>
-                <td>Contact</td>
-                <td>+91 987654321</td>
-            </tr>
-        </table>
+
+    <main class="container page-main">
+        <section class="page-heading">
+            <p class="eyebrow">Bio-data</p>
+            <h1>A little more about me</h1>
+            <p class="lead compact">
+                This page keeps the straightforward format of my original college website,
+                with updated contact and professional details.
+            </p>
+        </section>
+
+        <section class="bio-layout">
+            <div class="bio-card">
+                <h2>Personal Information</h2>
+                <div class="table-wrap">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Name</th>
+                                <td>Asmita G V</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Date of Birth</th>
+                                <td>25 November 2004</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Current Location</th>
+                                <td>Bengaluru, India</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email</th>
+                                <td><a href="mailto:gujjarasmita@gmail.com">gujjarasmita@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Contact</th>
+                                <td><a href="tel:+919148719086">+91 9148719086</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">LinkedIn</th>
+                                <td><a href="https://www.linkedin.com/in/asmita-gv/" target="_blank" rel="noreferrer">linkedin.com/in/asmita-gv</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">GitHub</th>
+                                <td><a href="https://github.com/ashh-droid" target="_blank" rel="noreferrer">github.com/ashh-droid</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <aside class="bio-side">
+                <section class="small-card">
+                    <h2>Languages Known</h2>
+                    <ul class="plain-list">
+                        <li>English</li>
+                        <li>Kannada</li>
+                        <li>Hindi</li>
+                    </ul>
+                </section>
+
+                <section class="small-card">
+                    <h2>Professional Interests</h2>
+                    <ul class="plain-list">
+                        <li>Full-stack web development</li>
+                        <li>Cloud deployment and DevOps</li>
+                        <li>Cybersecurity</li>
+                        <li>Generative AI and data tools</li>
+                    </ul>
+                </section>
+
+                <section class="small-card note-card">
+                    <h2>About this website</h2>
+                    <p>
+                        The first version was made in 2024 using basic HTML and CSS.
+                        The layout is now cleaner and responsive, but it is intentionally
+                        still simple and personal.
+                    </p>
+                </section>
+            </aside>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Asmita. All rights reserved.</p>
+        <div class="container footer-inner">
+            <p>Simple, responsive, and built without a framework.</p>
+            <p>&copy; 2024–<span data-current-year>2026</span> Asmita G V</p>
+        </div>
     </footer>
 </body>
 </html>
