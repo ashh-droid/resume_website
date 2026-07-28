@@ -2260,3 +2260,80 @@ h2 {
     padding: 22px;
   }
 }
+
+
+/* About section consistency refinement */
+
+.about-copy {
+  max-width: 690px;
+}
+
+.about-copy > h2 {
+  max-width: 680px;
+  margin-bottom: 26px;
+}
+
+.about-story {
+  display: grid;
+  gap: 20px;
+}
+
+.about-story p {
+  margin: 0;
+  color: #4f596d;
+  font-size: 1.02rem;
+  line-height: 1.72;
+}
+
+.about-opportunity {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-top: 30px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--lavender);
+  border-radius: 14px;
+  background: var(--surface);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-soft);
+}
+
+.about-opportunity .status-dot {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 auto;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0 5px rgba(47, 143, 104, 0.12);
+}
+
+.about-opportunity strong {
+  display: block;
+  color: var(--navy);
+  font-size: 0.96rem;
+  line-height: 1.45;
+}
+
+.about-opportunity p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .about-copy > h2 {
+    margin-bottom: 22px;
+  }
+
+  .about-story p {
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+
+  .about-opportunity {
+    margin-top: 24px;
+    padding: 16px;
+  }
+}
