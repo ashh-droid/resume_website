@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ashh-droid.github.io/Portfolio/sitemap.xml

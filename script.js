@@ -7,9 +7,9 @@ const navigation = document.querySelector("#site-nav");
 
 if (menuButton && navigation) {
   menuButton.addEventListener("click", () => {
-    const open = menuButton.getAttribute("aria-expanded") === "true";
-    menuButton.setAttribute("aria-expanded", String(!open));
-    navigation.classList.toggle("is-open", !open);
+    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", String(!isOpen));
+    navigation.classList.toggle("is-open", !isOpen);
   });
 
   navigation.querySelectorAll("a").forEach((link) => {
