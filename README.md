@@ -1,6 +1,6 @@
 # Asmita G V — Portfolio
 
-A responsive software-engineering portfolio presenting my selected project case studies, internship experience, full-stack and backend skills, DevOps work, cybersecurity experience, education, certifications, and contact details.
+A responsive software-engineering portfolio with selected case studies, internship experience, technical capabilities, education, certifications, and contact details.
 
 ## Live Website
 
@@ -30,7 +30,7 @@ https://ashh-droid.github.io/Portfolio/
 python -m http.server 8000
 ```
 
-Open `http://localhost:8000`.
+Then open `http://localhost:8000`.
 
 ## Contact
 
