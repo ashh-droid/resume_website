@@ -31,7 +31,7 @@ Asmita is a Computer Science graduate interested in:
 
 ## Featured Projects
 
-### Wobb Creator Scout
+### Wobb Vibe Coder Assignment
 A responsive influencer discovery and shortlist application built with React and TypeScript.
 
 - **Live demo:** https://vibe-coder-assignment-v1-ashhdroid.vercel.app/
@@ -39,9 +39,11 @@ A responsive influencer discovery and shortlist application built with React and
 
 ### Arcanelinx Corporate Website
 A responsive corporate website for an industrial automation company, developed using Next.js, React, TypeScript, and Cloudflare.
+- **Website Link:** https://arcanelinx.com/
 
 ### Hostel Allocation System
 A role-based hostel management platform built with Django and deployed using Docker and Kubernetes.
+- **Source code:** https://github.com/ashh-droid/Hostel-Allocation-System
 
 ## Technology Used
 
