@@ -1,6 +1,6 @@
 # Asmita G V — Portfolio
 
-A responsive portfolio featuring my projects, software engineering experience, technical skills, education, certifications, and contact details.
+A responsive portfolio featuring my projects, experience, technical skills, education, certifications, and contact details.
 
 ## Live Website
 
